@@ -1,0 +1,29 @@
+<%- include("./partials/header")%>
+
+
+    
+    <div class="row">
+    
+        <div class="col-md-4">
+            <img src="<%=movieData.Poster%>" class="thumbnail" alt="No Image in Database"> 
+        </div>
+        <div class="col-md-8">
+            <h3 class="display-4" style="color: rgb(170, 165, 138);"><%=movieData.Title%></h3>
+            <li class='list-group-item'> <strong> Actors: </strong> <%=movieData.Actors%> </li>
+            <li class='list-group-item'> <strong> Director: </strong> <%=movieData.Director%> </li>
+            <li class='list-group-item'> <strong> Genre: </strong> <%=movieData.Genre%> </li>
+            <li class='list-group-item'> <strong> ReleaseDate: </strong> <%=movieData.Released%> </li>
+            <li class='list-group-item'> <strong> Runtime: </strong> <%=movieData.Runtime%> </li>
+            <li class='list-group-item'> <strong> imdbRating: </strong> <%=movieData.imdbRating%> </li>
+        </div>
+
+      
+                
+           
+    </div>   
+    <h2>
+        Plot :<%=movieData.Plot%>
+        
+    </h2> 
+
+<%- include("./partials/footer")%>
